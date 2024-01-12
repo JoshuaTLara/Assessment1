@@ -2,7 +2,7 @@
 
 > To select an answer for the multiple choice questions, put an `x` inside the square brackets (`[ ]`) like this:
 > ```md
-> - [ ] This is the answer!
+> - [x] This is the answer!
 > ```
 >
 > **Pro tip:** You might find it easier to read the assessment through VS Code's Markdown Preview. To view the preview for this document, open the Command Palette (<kbd>Cmd+Shift-P</kbd> or <kbd>Ctrl+Shift-P</kbd>) and run `Markdown: Open Preview to the Side`.
@@ -17,7 +17,7 @@ Which statement is true about JavaScript?
 - [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
 - [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
-- [ ] **E.** None of the above are true.
+- [x] **E.** None of the above are true.
 
 ### A.2. Turn `sum` to `2`.
 
@@ -31,7 +31,7 @@ Which of these lines of code will cause `sum` to have a value of `2`? You can se
 answer.
 
 - [ ] **A.** `sum++`
-- [ ] **B.** `sum += 1`
+- [x] **B.** `sum += 1`
 - [ ] **C.** `sum = sum + 1`
 - [ ] **D.** All of the above
 - [ ] **E.** Some of the above
@@ -45,7 +45,7 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
 - [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
@@ -64,7 +64,7 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
+- [x] **B.** `no :(`
 - [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
@@ -89,7 +89,7 @@ cherry
 
 - [ ] **A.** `const fruit in fruits`
 - [ ] **B.** `const fruit of fruits`
-- [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
+- [x] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
 ### A.6. What will happen?
@@ -105,7 +105,7 @@ function makeWordArray(phrase) {
 
 - [ ] **A.** Nothing happens because the program errors out.
 - [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
-- [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
+- [x] **C.** It defines a function called `makeWordArray` and outputs a word array.
 - [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
 ### A.7. Identify the error
@@ -118,7 +118,7 @@ console.log'hi';
 // hi
 ```
 
-- [ ] **A.** The code causes an error because there should be parentheses around `'hi'`.
+- [x] **A.** The code causes an error because there should be parentheses around `'hi'`.
 - [ ] **B.** The code causes an error because `console.log` isn't a function.
 - [ ] **C.** The code causes an error because the code will run but it won't output anything.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -138,7 +138,7 @@ console.log(fruits[fruits.indexOf('apple')]);
   JavaScript syntax.
 - [ ] **B.** The code causes an error because `fruits.indexOf('apple')` doesn't return a valid
   index number.
-- [ ] **C.** The code causes an error because it outputs `0` instead of the expected output.
+- [x] **C.** The code causes an error because it outputs `0` instead of the expected output.
 - [ ] **D.** There is no error; the code generates the expected output.
 
 ### A.9. Identify the error
@@ -157,7 +157,7 @@ for (const w of words) {
 ```
 
 - [ ] **A.** The code causes an error because `w` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
+- [x] **B.** The code causes an error because `words` is an array and `toUpperCase()` isn't a
   valid array function.
 - [ ] **C.** The code causes an error because it will output `['JS', 'HTML', 'CSS']` three times.
 - [ ] **D.** There is no error; the code generates the expected output.
@@ -178,7 +178,7 @@ console.log(numStrings);
 ```
 
 - [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -210,7 +210,7 @@ outputArgs('hi', 'bye');
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
@@ -219,19 +219,19 @@ outputArgs('hi', 'bye');
 **_What is the purpose of functions?_**
 
 ```
-Functions can be used to create named blocks of code that can be executed/reused later. They help you keep code DRY and maintainable.
+Functions are use to save time and space when writing code. I build a small machine to perform a task and return something for me. Then i use this machine over and over referencing it instead of having to rebuild the machine each time.
 ```
 
 **_What is the difference between `console.log` and `return`?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Console.log is going to print to the console what ever is passed into it. The return is going to end a function and complete what is after it. Console.log is a funciton in and of its self. Return is just apart of a function.
 ```
 
 **_What's the difference between defining and calling a function?_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Defining a function is building it to peform a specific task. Calling the function is just referencing it later in the code to be used perform the function. 
 ```
 
 ### B.2. Describe these data types.
@@ -241,25 +241,25 @@ Write a short description of the following data types:
 **_String_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+A string is a group of characters inside of " " or ' ' and ` `. They don't change and are consider a iteam of its own.
 ```
 
 **_Number_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+Is an integer that has an inherit value, can be negitive or positive, can have decimal places, and can be assigned to a variable without needing quotes of any kind.
 ```
 
 **_Boolean_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+is a true or false statement.
 ```
 
 **_Array_**
 
 ```
-REPLACE THIS WITH YOUR ANSWER
+a list that that is stored and can be run through or called. Generally contains a data set.
 ```
 
 ### B.3. Trace the value of `x`
@@ -282,7 +282,7 @@ completed for you.
 
 ```
 Initial values: y = 0, x = 5
-1:              y = 1, x = ??
-2:              y = 2, x = ??
-3:              y = 3, x = ??
+1:              y = 1, x = 10
+2:              y = 2, x = 15
+3:              y = 3, x = 20
 ```
