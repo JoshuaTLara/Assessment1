@@ -23,7 +23,6 @@ function average(x, y) {
 //   => true
 
 function approximatelyEqual(x, y) {
-
   return Math.abs(x -y ) < 0.001
 }
 
@@ -58,15 +57,15 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  let result = '';
+  let answer = '';
   for (let i = 0; i < string.length; i++) {
     if (i % 2 === 0) {
-      result = result.concat(string[i].toLowerCase());
+      answer = answer.concat(string[i].toLowerCase());
     } else {
-      result = result.concat(string[i].toUpperCase());
+      answer = answer.concat(string[i].toUpperCase());
     }
   }
-  return result;
+  return answer;
 }
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -82,25 +81,25 @@ function stickyCase(string) {
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
-  let result = '';
+  let answer = '';
   for (let i = 0; i < string.length; i++) {
     if (string[i] === 'a') {
-      result = result.concat('4');
+      answer = answer.concat('4');
     } else if (string[i] === 'e') {
-      result = result.concat('3');
+      answer = answer.concat('3');
     } else if (string[i] === 'i') {
-      result = result.concat('1');
+      answer = answer.concat('1');
     } else if (string[i] === 'o') {
-      result = result.concat('0');
+      answer = answer.concat('0');
     } else if (string[i] === 's') {
-      result = result.concat('5');
+      answer = answer.concat('5');
     } else if (string[i] === 't') {
-      result = result.concat('7');
+      answer = answer.concat('7');
     } else {
-      result = result.concat(string[i]);
+      answer = answer.concat(string[i]);
     }
   }
-  return result;
+  return answer;
 }
 
 export {

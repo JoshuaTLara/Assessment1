@@ -3,15 +3,13 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  const result = [];
-
+  const answer = [];
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > 10) {
-      result.push(numbers[i]);
+      answer.push(numbers[i]);
     }
   }
-
-  return result;
+  return answer;
 }
 
 
@@ -20,13 +18,13 @@ function greaterThanTen(numbers) {
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
-  const result = [];
+  const answer = [];
   for (let i = 0; i < words.length; i++) {
     if (words[i][0] === 'b'| words[i][0] === 'B') {
-      result.push(words[i])
+      answer.push(words[i])
     }
   }
-  return result;
+  return answer;
 }
 
 // Add all the elements from additionalItems to the end of originalArray.
@@ -43,16 +41,14 @@ function extend(originalArray, additionalItems) {
 //   itemsWithLength(['a', 'bbb', 'cccc', 'dddddd', 'eee'], 3);
 //   => ['bbb', 'eee']
 function itemsWithLength(items, length) {
-  const result = [];
-
+  const answer = [];
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     if (item.length === length) {
-      result.push(item);
+      answer.push(item);
     }
   }
-
-  return result;
+  return answer;
 }
 
 // Return an array with every other element from the input array (start with index 0).
@@ -60,12 +56,11 @@ function itemsWithLength(items, length) {
 //   everyOtherItem(['a', 'b', 'c', 'd', 'e']);
 //   => ['a', 'c', 'e']
 function everyOtherItem(items) {
-  const result = [];
-
+  const answer = [];
   for (let i = 0; i < items.length; i+= 2) {
-      result.push(items[i]);
+      answer.push(items[i]);
     }
-    return result;
+    return answer;
   }
 
 
@@ -76,16 +71,14 @@ function everyOtherItem(items) {
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
 function findWordsStartingWith(words, letter) {
-  const result = [];
-
+  const answer = [];
   for (let i = 0; i < words.length; i++) {
     const item = words[i];
     if (item[0] === letter) {
-      result.push(i);
+      answer.push(i);
     }
   }
-
-  return result;
+  return answer;
 }
 
 // Return the `n` smallest values in the array in descending order (largest
@@ -96,8 +89,8 @@ function findWordsStartingWith(words, letter) {
 //   => [21, 4, 1]
 function smallestNItems(items, n) {
   items.sort((a, b) => a - b);
-  const result = items.slice(0, n).reverse();
- return result;
+  const answer = items.slice(0, n).reverse();
+ return answer;
 }
 
 // Search for a value in the array and return its index. If the value appears
@@ -107,14 +100,12 @@ function smallestNItems(items, n) {
 //   findIndex(['a', 'b', 'c', 'a', 'b', 'c'], 'c');
 //   => 2
 function findIndex(items, value) {
-
   for (let i = 0; i < items.length; i++) {
     const item = items[i];
     if (item === value) {
       return i;
     }
   }
-
   return undefined;
 }
 
@@ -124,11 +115,11 @@ function findIndex(items, value) {
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
 function range(start, stop) {
-  const result =[];
+  const answer =[];
   for (let i = start; i <= stop; i++) {
-    result.push(i);
+    answer.push(i);
   }
-  return result
+  return answer
 }
 
 export {
